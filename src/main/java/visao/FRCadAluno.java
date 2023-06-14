@@ -240,7 +240,11 @@ public class FRCadAluno extends javax.swing.JFrame {
     }//GEN-LAST:event_edtNomeActionPerformed
 
     private void btNovoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btNovoActionPerformed
-        // TODO add your handling code here:
+            edtNome.setEnabled(true);
+            edtSexo.setEnabled(true);
+            edtIdade.setEnabled(true);
+            edtMatricula.setEnabled(true);
+            edtAnoDeIngresso.setEnabled(true);
     }//GEN-LAST:event_btNovoActionPerformed
 
     /**
