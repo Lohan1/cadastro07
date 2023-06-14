@@ -1,13 +1,12 @@
-package com.mycompany.cadastro07.entidades;
 
 import java.util.Date;
 
-public class Aluno {
-  private String nome;
-  private char sexo;
-  private int idade;
-  private String matricula;
-  private Date anoDeIngresso;
+class Aluno {
+    private String nome;
+    private char sexo;
+    private int idade;
+    private String matricula;
+    private Date anoDeIngresso;
 
     public Aluno(String nome, char sexo, int idade, String matricula, Date anoDeIngresso) {
         this.nome = nome;
@@ -16,13 +15,11 @@ public class Aluno {
         this.matricula = matricula;
         this.anoDeIngresso = anoDeIngresso;
     }
-
+    
+    
+    
     public Aluno() {
-        this.nome = "";
-        this.sexo = 'f';
-        this.idade = 0;
-        this.matricula = "";
-        this.anoDeIngresso = new Date();
+        // Construtor vazio
     }
 
     public String getNome() {
@@ -65,14 +62,6 @@ public class Aluno {
         this.anoDeIngresso = anoDeIngresso;
     }
     
-    public String toString(){
-  return ("__________________________\n"
-    + "Nome: "+ this.nome + "\n"
-    + "Sexo:" + this.sexo + "\n"
-    + "Idade: " + this.idade + "\n"
-    + "Matricula: "+ this.matricula + "\n"
-    + "__________________________\n");
-}
-
     
+  
 }

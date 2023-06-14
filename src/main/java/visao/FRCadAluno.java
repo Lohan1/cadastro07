@@ -103,6 +103,11 @@ public class FRCadAluno extends javax.swing.JFrame {
 
         btCancelar.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         btCancelar.setText("Cancelar");
+        btCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btCancelarActionPerformed(evt);
+            }
+        });
 
         btEditar.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         btEditar.setText("Editar");
@@ -246,6 +251,20 @@ public class FRCadAluno extends javax.swing.JFrame {
             edtMatricula.setEnabled(true);
             edtAnoDeIngresso.setEnabled(true);
     }//GEN-LAST:event_btNovoActionPerformed
+
+    private void btCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCancelarActionPerformed
+         edtNome.setEnabled(false);
+         edtSexo.setEnabled(false);
+         edtIdade.setEnabled(false);
+         edtMatricula.setEnabled(false);
+         edtAnoDeIngresso.setEnabled(false);
+
+         edtNome.setText("");
+         edtSexo.setText("");
+         edtIdade.setText("");
+         edtMatricula.setText("");
+         edtAnoDeIngresso.setText("");
+    }//GEN-LAST:event_btCancelarActionPerformed
 
     /**
      * @param args the command line arguments
